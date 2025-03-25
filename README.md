@@ -72,14 +72,14 @@ namespace TempPlayground
             for (int i = 0; i < 10; i++)
             {
                 Value value = device.GetCurrentValue();
-                Console.WriteLine($"{i,3} : {value.MeasurementValue:F23} for channel {value.Channel}");
+                Console.WriteLine($"{i,3} : {value.MeasurementValue:F3} for channel {value.Channel}");
             }
         }
     }
 }
 ```
 
-## Values Class
+## Value Class
 
 This is a simple container class for handling the measurement parameters (temperature, channel, ...) obtained by a device query. Once created the values are immutable. For new measurement values one has to create a new object of this class. 
 
